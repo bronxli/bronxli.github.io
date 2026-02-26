@@ -8,21 +8,19 @@ title: Contact
   <input type="hidden" name="_to" value="{{ site.data.email }}" />
   <input type="text" name="_gotcha" style="display: none;">
 
-  <label for="name">姓名</label>
+  <label for="name">Name</label>
   <input type="text" name="name" id="name" required />
 
-  <label for="email">邮箱</label>
+  <label for="email">Email</label>
   <input type="email" name="email" id="email" required />
 
-  <label for="purpose">合作意向</label>
+  <label for="purpose">Project type</label>
   <select id="purpose" name="purpose">
-      <option value="brand">品牌合作</option>
-      <option value="commercial">商业拍摄</option>
-      <option value="video">影像制作</option>
-      <option value="other">其他</option>
+    <option value="brand">Brand collaboration</option>
+    <option value="commercial">Commercial shoot</option>
+    <option value="video">Video production</option>
+    <option value="other">Other</option>
   </select>
 
-  <textarea name="message" id="message"></textarea>
-
-  <input type="submit" value="发送" />
+  <input type="submit" value="Send" />
 </form>
