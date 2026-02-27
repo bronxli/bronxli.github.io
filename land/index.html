@@ -1,1 +1,15 @@
+---
+title: Land
+---
 
+<section class="gallery">
+  {% assign land_images = site.static_files | where_exp: "f", "f.path contains '/uploads/land/'" %}
+
+  {% for img in land_images %}
+    {% if img.extname == '.jpg' or img.extname == '.jpeg' or img.extname == '.png' %}
+      <figure class="gallery-item">
+        <img src="{{ img.path | relative_url }}" alt="Land">
+      </figure>
+    {% endif %}
+  {% endfor %}
+</section>
